@@ -9,11 +9,11 @@ export function MainNav() {
             </NavbarBrand>
             <NavbarToggle />
             <NavbarCollapse>
-                <NavbarLink href="#" active>Home</NavbarLink>
-                <NavbarLink as={Link} href="#">About</NavbarLink>
-                <NavbarLink href="#">Services</NavbarLink>
-                <NavbarLink href="#">Pricing</NavbarLink>
-                <NavbarLink href="#">Contact</NavbarLink>
+                <NavbarLink href="/" active>Home</NavbarLink>
+                <NavbarLink as={Link} href="/about">About</NavbarLink>
+                <NavbarLink href="/services">Services</NavbarLink>
+                <NavbarLink href="/pricing">Pricing</NavbarLink>
+                <NavbarLink href="/contact">Contact</NavbarLink>
             </NavbarCollapse>
             <DarkThemeToggle className="focus:ring-0"/>
         </Navbar>

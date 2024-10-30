@@ -21,8 +21,8 @@ const faqs = [
 
 const Faq = () => {
     return (
-        <div className="mx-80 py-10">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white text-center my-8">Questions? Answers.</h2>
+        <div className="lg:mx-80 py-10">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white text-center my-8">Questions?<br/>Answers.</h2>
             <Accordion>
                 {faqs.map(({ question, answer }, index) => (
                     <AccordionPanel key={index}>

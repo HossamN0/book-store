@@ -14,9 +14,9 @@ const MobileView = () => {
     ]
     return (
         <ParallaxProvider>
-            <div className="flex gap-10 mx-auto justify-center align-middle overflow-hidden h-[35rem] max-w-[1600px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mx-auto justify-center items-center align-middle overflow-hidden min-h-[35rem] max-w-[1600px]">
                 {images.map(({src, alt, speed}, index)=>
-                    <Parallax key={index} speed={speed}><Image src={src} alt={alt} width={260} height={555} /></Parallax>
+                    <Parallax key={index} speed={speed}><Image src={src} alt={alt} width={260} height={555} className="mx-auto" /></Parallax>
                 )}
             </div>
         </ParallaxProvider>
