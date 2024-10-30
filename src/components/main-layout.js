@@ -3,7 +3,7 @@ import { DarkThemeToggle, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, Navba
 
 export function MainNav() {
     return (
-        <Navbar>
+        <Navbar className="sticky top-0 z-50">
             <NavbarBrand as={Link} href="/">
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Book Store</span>
             </NavbarBrand>
@@ -15,7 +15,7 @@ export function MainNav() {
                 <NavbarLink href="#">Pricing</NavbarLink>
                 <NavbarLink href="#">Contact</NavbarLink>
             </NavbarCollapse>
-            <DarkThemeToggle />
+            <DarkThemeToggle className="focus:ring-0"/>
         </Navbar>
     );
 }

@@ -10,10 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes:{
+        swipe:{
+          "0%":{transform:"translateX(0)"},
+          "100%":{transform:"translateX(-100%)"},
+        }
       },
+      animation:{
+        swipe:"swipe 20s ease-in-out infinite",
+      }
     },
   },
   plugins: [
